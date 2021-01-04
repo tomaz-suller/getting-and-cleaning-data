@@ -7,7 +7,6 @@ main <- function(){
   rnames <- names(mean_and_std)
   names(mean_and_std) <- fixMeanStdRownames(rnames)
   averages <- calculateAveragePerActivitySubject(mean_and_std)
-  save(data, mean_and_std, averages, file="results.RData")
   exportDataDir(data, mean_and_std, averages)
 }
 
